@@ -7,7 +7,11 @@
   display: flex;
   flex-wrap: wrap;
 }
-.field {
+.hidden {
+  background-color: black;
+}
+.show {
+  background-color: black;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
