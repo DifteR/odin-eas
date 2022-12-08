@@ -2,12 +2,23 @@ let divContainer = document.getElementById("div-container");
 let idFinder;
 let fields = [];
 for (let i = 0; i < 256; i++) {
-  divContainer.innerHTML += `<div id='field${i}' class='show'></div>`;
+  var gridElement = document.createElement('div');
+  gridElement.className =  'grid-element';
+  gridElement.addEventListener('mouseenter', function (e) {
+    e.target.style.backgroundColor = 'black';
+  })
+  divContainer.appendChild(gridElement);
+    /*divContainer.innerHTML += `<div id='field${i}' class='show'></div>`;
+      idFinder = "field" + i;
+        document.getElementById(idFinder).addEventListener("click", function () {
+            console.log("here");
+          
+  /*divContainer.innerHTML += `<div id='field${i}' class='show'></div>`;
   idFinder = "field" + i;
   document.getElementById(idFinder).addEventListener("click", function () {
     console.log("here");
     idFinder.classList.add("show");
-  });
+  })*/;
   //fields.push(document.getElementById(idFinder));
   //fields[i].addEventListener(
   //"mouseover",
