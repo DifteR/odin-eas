@@ -3,8 +3,8 @@
 }
 #div-container {
   line-height: 0px;
-  width: 800px;
-  height: 800px;
+  /*width: 400px;
+  height: 400px;*/
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -20,6 +20,7 @@
   height: 20px;
 }
 .grid-element {
+  justify-content: space-evenly;
   gap: 0;
   flex-shrink: 0;
   width: 20px;
