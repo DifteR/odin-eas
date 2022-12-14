@@ -2,6 +2,7 @@
   background-color: black;
 }
 #div-container {
+  line-height: 0px;
   width: 800px;
   height: 800px;
   display: flex;
@@ -12,6 +13,14 @@
 }
 .show {
   background-color: black;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.grid-element {
+  gap: 0;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
